@@ -1,0 +1,207 @@
+body{
+    background-color: rgb(214, 135, 15);
+}
+
+.contNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.contMain{
+    background-color: rgba(213, 118, 40, 0.961);
+}
+
+.contInicio{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btnInicio{
+    margin-top: 10px;
+}
+
+.contNavImg{
+    height: 200px;
+}
+
+.logo{
+    margin: 20px;
+}
+
+
+.infoPoducto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    width: 250px;
+    margin: 50px;
+}
+
+
+/*
+    stylo para la vista de comida
+*/
+.secComida{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height:100%;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+
+.infoComida{
+    margin-top: 30px;
+    flex-direction: row-reverse;
+    border: 2px solid black;
+    background: rgb(184, 149, 149);
+}
+
+.precioComida{
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 10px;
+    height: 50%;
+    background: #ffa710;
+}
+
+/*img:hover{
+    width: 170px;
+    height: 170px;
+}*/
+
+.contRadio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.contRadio p{
+    margin-top: 0px;
+}
+
+.radio{ 
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #05000a;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    top:50px;
+
+}
+
+.card-product{
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(163, 82, 170, 0.583);
+  margin: 20px;
+}
+
+.inpCantidad {
+  position: relative;
+  top: 30px;
+}
+
+.formCar{
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.radio:checked {
+    background-color: rgb(62, 147, 221);
+    color: rgb(13, 70, 156);
+    background-position: 0 0;
+  } 
+
+.inpCantidad{
+    width: 100px;
+}
+
+
+
+
+/*STILE FRO VIEW ORDEN*/
+/*img{
+    height:150px;
+    width:100%;
+  }*/
+  
+  div [class^="col-"]{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    height:80px;  
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
