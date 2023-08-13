@@ -7,7 +7,7 @@
         <button type="button" class="btn-close js-btnClose" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form  action="http://localhost/elbohemioweb/Controllers/userController.php?peticion=crearCuenta" method="POST">
+        <form  action="<?php echo RUTA_URL; ?>Controllers/userController.php?peticion=crearCuenta" method="POST">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
                 <input type="text" name="nombre" class="form-control js-nombre" id="exampleFormControlInput1" required placeholder="Escriba su nombre completo">
