@@ -7,7 +7,7 @@
     //echo $sessionId; 
     //phpinfo();
 
-    define('RUTA_URL', 'http://localhost/elbohemioweb/');
+    define('RUTA_URL', 'https://proyecto-ti.com/elbohemioweb/');
 
 
     $tipoUser = 2;

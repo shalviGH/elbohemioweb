@@ -36,10 +36,9 @@
         private $userModel;
         public function __construct()
         {
-            require_once("C:/xampp/htdocs/elbohemioweb/Models/OrdenModel.php");
-            $this->model = new OrdenModel();
-
-            require_once("C:/xampp/htdocs/elbohemioweb/Models/userModel.php");
+           
+            //require_once("C:/xampp/htdocs/elbohemioweb/Models/userModel.php");
+            include("../Models/userModel.php");
             $this->userModel = new UserModel();
 
             session_start();

@@ -150,7 +150,8 @@
         private $model;
         public function __construct()
         {
-            require_once("C:/xampp/htdocs/elbohemioweb/Models/FoodModel.php");
+            //require_once("C:/xampp/htdocs/elbohemioweb/Models/FoodModel.php");
+            include("../Models/FoodModel.php");
             $this->model = new FoodModel();
 
             session_start();
